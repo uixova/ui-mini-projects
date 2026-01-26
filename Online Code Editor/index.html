@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    
+    <section class="container">
+
+
+        <div class="editor">
+            <div class="left">
+                <label><i class="fa-brands fa-html5"></i>HTML</label>
+                <textarea onkeyup="run()" id="html-code" cols="30" rows="10" spellcheck="false"></textarea>
+
+                <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+                <textarea onkeyup="run()" id="css-code" cols="30" rows="10" spellcheck="false"></textarea>
+
+                <label><i class="fa-brands fa-js"></i>JavaScript</label>
+                <textarea onkeyup="run()" id="js-code" cols="30" rows="10" spellcheck="false"></textarea>
+            </div>
+            <div class="right">
+                <label><i class="fa-solid fa-play"></i>Output</label>
+                <iframe id="output"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

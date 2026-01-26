@@ -1,0 +1,31 @@
+body {
+    min-height: 100dvh;
+    background: #aef3ff;
+}
+
+.pulse {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border: 2px solid #00265f;
+    border-radius: 50%;
+    z-index: 10000;
+    animation: animate 0.6s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+}

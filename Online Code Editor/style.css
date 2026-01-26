@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1f1f1f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
+    cursor: default;
+}
+
+body {
+    width: 100%;
+    height: 100dvh;
+    color: #fff;
+}
+
+.container {
+    background: linear-gradient(#28c17e, #71cea5, #90cab1, #acc9bc);
+    text-align: center;
+}
+
+.container h1 {
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.editor {
+    background: #252744;
+    text-align: start;
+    display: flex;
+    padding: 0.48rem;
+}
+
+.left, .right {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+label i {
+    padding-right: 5px;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 270px;
+    background: #1f1f1f;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 97%;
+    background: #fff;
+    border: 0;
+    outline: 0;
+
+}
