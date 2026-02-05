@@ -175,7 +175,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (buttonType === 'backspace') {
-            // Düzeltme: Hata/Özel String (Infinity, NaN, Hata) veya Bilimsel Gösterim ('e' içeren) varsa geri almayı engelle.
             if (isErrorOrSpecial(currentInput)) {
                 return;
             }
